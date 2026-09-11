@@ -1,11 +1,12 @@
+import Navbar from "./components/Navbar"
+
 const App = () =>{
   return(
-    <>
-    <h1>Bangladesh</h1>
-    
-    
-    </>
+    <main >
+    <Navbar/>
 
+
+    </main>
   )
 }
 export default App
