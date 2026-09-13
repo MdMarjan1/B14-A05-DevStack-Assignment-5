@@ -5,9 +5,9 @@ const YourStack = () => {
   const { stack, removeFromStack, removeAll } = useStack();
 
   return (
-    <div className="h-48 border border-gray-200 rounded-xl p-4 m-3">
+    <div className="h-auto border border-gray-200 rounded-xl p-4 m-3">
       <h3 className="font-bold pb-1"> Your Stack</h3>
-      <p className="text-[#64748B] text-sm pb-3">
+      <p className="text-[#151415fa] text-sm pb-3">
         {stack.length === 0
           ? "No technologies selected yet."
           : `${stack.length} Technology Selected`}
