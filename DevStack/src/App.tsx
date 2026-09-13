@@ -7,6 +7,11 @@ import { StackProvider } from "./context/StackContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import Footer from "./components/Footer"
+
+
+
+
 const maincourse = async (): Promise<maincourseProps[]> => {
   const response = await fetch("/data.json");
   const courses = await response.json();
@@ -22,6 +27,9 @@ const App = () => {
         <Suspense fallback={<p>Loading....</p>}>
           <Technology maincourse={maincourse()} />
         </Suspense>
+        <Footer/>
+
+        
       </main>
       <ToastContainer position="top-right" autoClose={2000} />
     </StackProvider>
