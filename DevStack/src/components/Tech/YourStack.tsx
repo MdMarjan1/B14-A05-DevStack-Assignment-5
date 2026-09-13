@@ -6,7 +6,7 @@ const YourStack = () => {
 
   return (
     <div className="h-48 border border-gray-200 rounded-xl p-4 m-3">
-      <h3 className="font-bold pb-1">Your Stack</h3>
+      <h3 className="font-bold pb-1"> Your Stack</h3>
       <p className="text-[#64748B] text-sm pb-3">
         {stack.length === 0
           ? "No technologies selected yet."
